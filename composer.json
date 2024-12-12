@@ -1,0 +1,41 @@
+{
+    "name": "longchen2/dcat-auth-google-2fa",
+    "alias": "Auth Google 2FA两步验证",
+    "description": "Dcat-Admin auth verification by Google 2FA / Dcat-Admin 登录 Google 2FA两步验证",
+    "type": "library",
+    "keywords": [
+        "dcat-admin",
+        "extension",
+        "google",
+        "auth",
+        "2fa",
+        "login",
+        "captcha"
+    ],
+    "homepage": "https://github.com/longChen2/dcat-auth-google-2fa",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "longChen2",
+            "email": "longChen233@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0",
+        "pragmarx/google2fa-qrcode": "^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LongChen\\DcatAuthGoogle2Fa\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "LongChen\\DcatAuthGoogle2Fa\\DcatAuthGoogle2FaServiceProvider",
+        "laravel": {
+            "providers": [
+                "LongChen\\DcatAuthGoogle2Fa\\DcatAuthGoogle2FaServiceProvider"
+            ]
+        }
+    }
+}
