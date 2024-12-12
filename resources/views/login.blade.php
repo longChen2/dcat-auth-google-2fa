@@ -102,7 +102,7 @@
                                 type="text"
                                 class="form-control {{ $errors->has('google_2fa_code') ? 'is-invalid' : '' }}"
                                 name="google_2fa_code"
-                                placeholder="{{ \Asundust\DcatAuthGoogle2Fa\DcatAuthGoogle2FaServiceProvider::trans('dcat-auth-google-2fa.google_2fa_code_tips') }}"
+                                placeholder="{{ \LongChen\DcatAuthGoogle2Fa\DcatAuthGoogle2FaServiceProvider::trans('dcat-auth-google-2fa.google_2fa_code_tips') }}"
                                 value="{{ old('google_2fa_code') }}"
                         >
 
@@ -110,7 +110,7 @@
                             <i class="fa fa-google"></i>
                         </div>
 
-                        <label for="code">{{ \Asundust\DcatAuthGoogle2Fa\DcatAuthGoogle2FaServiceProvider::trans('dcat-auth-google-2fa.google_2fa_code') }}</label>
+                        <label for="code">{{ \LongChen\DcatAuthGoogle2Fa\DcatAuthGoogle2FaServiceProvider::trans('dcat-auth-google-2fa.google_2fa_code') }}</label>
 
                         <div class="help-block with-errors"></div>
                         @if($errors->has('google_2fa_code'))
